@@ -12,7 +12,7 @@ export const JobListWrapper = styled.aside`
 
 export const JobListItem = styled.span`
     display:flex;
-    border-bottom:solid black 2px;
+    border-bottom:solid black 1px;
     padding:0;
     flex-wrap:wrap;
     align-items:center;
@@ -51,7 +51,8 @@ export const JobListItem = styled.span`
     }
     :hover {
         cursor:pointer;
-    }
+        border: 2px solid black;
+  }
 `
 
 export const JobListItemDesc = styled.section`
