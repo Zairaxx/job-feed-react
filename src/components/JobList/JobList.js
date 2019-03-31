@@ -7,7 +7,7 @@ const JobList = ({ads, openAd}) => {
             return null
         }
         else {
-            const allID = ads.map( ads => {
+            const ListOfJobAds = ads.map( ads => {
                 let {descr, id, company, title, experience, employment_type, locations, urls} = ads;
                 return (
                     <Fade left big>
@@ -24,7 +24,8 @@ const JobList = ({ads, openAd}) => {
                                 </Flex>
                                 <Flex direction="column">
                                     <p> Experience: {experience}</p>
-                                    <p> Capacity: {employment_type}</p></Flex>
+                                    <p> Capacity: {employment_type}</p>
+                                </Flex>
                             </div>
                                 <CallToAction><a href={urls.ad} target="_blank" rel="noopener noreferrer">Apply For Job</a></CallToAction>
                         </Flex>
@@ -33,7 +34,7 @@ const JobList = ({ads, openAd}) => {
             })
         return(
             <React.Fragment>
-                    <JobListWrapper>{allID}</JobListWrapper>
+                    <JobListWrapper>{ListOfJobAds}</JobListWrapper>
             </React.Fragment>
         )
     }
