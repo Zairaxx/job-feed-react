@@ -16,15 +16,9 @@ class App extends Component {
   }
 
   toggleDescription = (e) => {
-    let listItem = e.currentTarget;
-    let description = listItem.querySelector('section');
-
-    if (description.style.display == false || description.style.display == "none"){
-      description.style.display = "block";
-    } else {
-      description.style.display = "none";
-      }
-    }
+    let description = e.currentTarget.querySelector('section');
+    description.style.display == false || description.style.display == "none"?description.style.display = "block":description.style.display = "none"
+}
 
   render() {
     return (
