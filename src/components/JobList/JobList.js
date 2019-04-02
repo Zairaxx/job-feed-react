@@ -35,9 +35,7 @@ const JobList = ({ads, openAd}) => {
                 )
             })
         return(
-            <React.Fragment>
                     <JobListWrapper>{ListOfJobAds}</JobListWrapper>
-            </React.Fragment>
         )
     }
 
