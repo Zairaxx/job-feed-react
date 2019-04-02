@@ -16,8 +16,8 @@ class App extends Component {
   }
 
   toggleDescription = (e) => {
-    let description = e.currentTarget.querySelector('section');
-    description.style.display == false || description.style.display == "none"?description.style.display = "block":description.style.display = "none"
+    let style = e.currentTarget.querySelector('section').style;
+    style.display == false || style.display == "none"?style.display = "block":style.display = "none"
 }
 
   render() {
